@@ -1,0 +1,28 @@
+query MainQuery($as_user: String, $first: Int, $after: Cursor) {
+  user(login: $as_user) {
+    follows(first: $first, after: $after, order: ASC) {
+      totalCount
+      edges {
+        cursor
+        node {
+          broadcastSettings {
+            title
+          }
+          channel {
+            name
+            displayName
+          }
+          stream {
+            viewersCount
+            game {
+              displayName
+            }
+            height
+            averageFPS
+            type
+          }
+        }
+      }
+    }
+  }
+}
