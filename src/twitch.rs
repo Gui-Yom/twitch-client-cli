@@ -3,7 +3,7 @@ use graphql_client::{GraphQLQuery, Response};
 use reqwest::Client;
 
 const TWITCH_HOMEPAGE: &str = "https://www.twitch.tv";
-const TWITCH_API_GQL: &str = "https://api.twitch.tv/gql";
+const TWITCH_API_GQL: &str = "https://gql.twitch.tv/gql";
 const TWITCH_API_USHER: &str = "https://usher.ttvnw.net/api/channel/hls/";
 pub const TWITCH_CLIENT_ID: &str = "kimne78kx3ncx6brgo4mv6wki5h1ko";
 
